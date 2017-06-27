@@ -1,0 +1,59 @@
+<templateSet group="Android">
+  <template name="logtag" value="private static final String TAG = &quot;$CLASS_NAME$&quot;;" description="private static final String TAG =" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="logd" value="Log.d(TAG, &quot;$METHOD$: start&quot;);" description="Prints a method name to LogCat" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logd2" value="Log.d(TAG, &quot;$METHOD$: $VAL1_COPY$, $VAL2_COPY$ = &quot; + $VAL1$ + &quot;, &quot; + $VAL2$);" description="Prints two values to LogCat" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL1" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val1&quot;" alwaysStopAt="true" />
+    <variable name="VAL1_COPY" expression="escapeString(VAL1)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL2" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val2&quot;" alwaysStopAt="true" />
+    <variable name="VAL2_COPY" expression="escapeString(VAL2)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logd3" value="Log.d(TAG, &quot;$METHOD$: $VAL1_COPY$, $VAL2_COPY$, $VAL3_COPY$ = &quot; + $VAL1$ + &quot;, &quot; + $VAL2$ + &quot;, &quot; + $VAL3$);" description="Prints three values to LogCat" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL1" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val1&quot;" alwaysStopAt="true" />
+    <variable name="VAL1_COPY" expression="escapeString(VAL1)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL2" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val2&quot;" alwaysStopAt="true" />
+    <variable name="VAL2_COPY" expression="escapeString(VAL2)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL3" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val3&quot;" alwaysStopAt="true" />
+    <variable name="VAL3_COPY" expression="escapeString(VAL3)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logd4" value="Log.d(TAG, &quot;$METHOD$: $VAL1_COPY$, $VAL2_COPY$, $VAL3_COPY$ , $VAL4_COPY$ = &quot; + $VAL1$ + &quot;, &quot; + $VAL2$ + &quot;, &quot; + $VAL3$ + &quot;, &quot; + $VAL4$);" description="Prints four values to LogCat" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL1" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val1&quot;" alwaysStopAt="true" />
+    <variable name="VAL1_COPY" expression="escapeString(VAL1)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL2" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val2&quot;" alwaysStopAt="true" />
+    <variable name="VAL2_COPY" expression="escapeString(VAL2)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL3" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val3&quot;" alwaysStopAt="true" />
+    <variable name="VAL3_COPY" expression="escapeString(VAL3)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL4" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val4&quot;" alwaysStopAt="true" />
+    <variable name="VAL4_COPY" expression="escapeString(VAL4)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logd1" value="Log.d(TAG, &quot;$METHOD$: $VAL1_COPY$ = &quot; + $VAL1$);" description="Prints a value to LogCat" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAL1" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;val1&quot;" alwaysStopAt="true" />
+    <variable name="VAL1_COPY" expression="escapeString(VAL1)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
