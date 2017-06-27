@@ -1,0 +1,14 @@
+<keymap version="1" name="Default copy" parent="$default">
+  <action id="CIDR.Lang.ImportsHierarchy" />
+  <action id="FindInPath" />
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="shift alt h" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="shift alt v" />
+  </action>
+</keymap>
